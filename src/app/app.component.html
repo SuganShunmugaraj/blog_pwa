@@ -1,0 +1,19 @@
+<div class="container">
+    <h3>Todo List</h3>
+    <div class="holder">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>List</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tr *ngFor="let list of lists | slice: 0:5">
+                <td>{{list.id}}</td>
+                <td> {{list.title}}</td>
+                <td>{{list.completed}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
